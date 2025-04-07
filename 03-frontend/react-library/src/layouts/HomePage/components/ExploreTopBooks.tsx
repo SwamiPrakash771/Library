@@ -1,0 +1,20 @@
+import { Link } from "react-router-dom";
+
+export const ExploreTopBooks = () => {
+  return (
+    <div className="p-5 mb-4 bg-dark header">
+      <div
+        className="container-fluid p-5 align-items-center text-white 
+                            justify-content-center d-flex"
+      >
+        <div>
+          <h1 className="fw-bold display-5">Find your Next Adventure</h1>
+          <p className="col-md-8 fs-4">Where would you like to go next</p>
+          <Link to="/search" type="button" className="btn btn-primary">
+            Explore Top Books
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};
